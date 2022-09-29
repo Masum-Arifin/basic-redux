@@ -3,18 +3,18 @@
 const {createStore} = require("redux")
 
 
-const INCREMENT = "INCREMENT";
-const INCREMENT_BY_VALUE = "INCREMENT_BY_VALUE";
-const DECREMENT = "DECREMENT";
-const RESET = "RESET";
+const ADD_USER = "ADD_USER";
+
 
 const initialState = {
     users: ['masum'],
-  count: 0,
+  count: 1,
 };
 
-{
-  type: INCREMENT;
+const addUser = () =>{
+    return{
+        type: ADD_USER,
+      }
 }
 
 
