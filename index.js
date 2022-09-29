@@ -11,9 +11,10 @@ const initialState = {
   count: 1,
 };
 
-const addUser = () =>{
+const addUser = (user) =>{
     return{
         type: ADD_USER,
+        Payload: user,
       }
 }
 
@@ -46,7 +47,6 @@ const userReducer = (state = initialState, action) => {
     
     case ADD_USER:
       return {
-        ...state,
         count: state.count + action.Payload,
       };
 
@@ -64,4 +64,4 @@ store.subscribe(()=>{
 })
 
 
-store.dispatch(incrementCounterByValue(15))
+store.dispatch(addUser('alvin'))
