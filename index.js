@@ -44,7 +44,7 @@ const addUser = () =>{
 const userReducer = (state = initialState, action) => {
   switch (action.type) {
     
-    case INCREMENT_BY_VALUE:
+    case ADD_USER:
       return {
         ...state,
         count: state.count + action.Payload,
@@ -57,18 +57,11 @@ const userReducer = (state = initialState, action) => {
 
 
 // store
-const store = createStore(counterReducer)
+const store = createStore(userReducer)
 
 store.subscribe(()=>{
     console.log(store.getState());
 })
 
-// store.dispatch(incrementCounterAction())
-// store.dispatch(incrementCounterAction())
-// store.dispatch(incrementCounterAction())
-// store.dispatch(incrementCounterAction())
-// store.dispatch(decrementCounterAction())
-// store.dispatch(resetCounterAction())
-// store.dispatch(incrementCounterAction())
-store.dispatch(incrementCounterByValue(5))
+
 store.dispatch(incrementCounterByValue(15))
