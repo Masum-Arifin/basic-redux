@@ -41,7 +41,7 @@ const addUser = () =>{
 // };
 
 // CREATING REDUCER
-const counterReducer = (state = initialState, action) => {
+const userReducer = (state = initialState, action) => {
   switch (action.type) {
     case INCREMENT:
       return {
