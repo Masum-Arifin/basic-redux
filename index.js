@@ -47,6 +47,7 @@ const userReducer = (state = initialState, action) => {
     
     case ADD_USER:
       return {
+          users:[...state.users, action.Payload]
         count: state.count + action.Payload,
       };
 
