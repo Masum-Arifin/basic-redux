@@ -18,27 +18,27 @@ const addUser = () =>{
 }
 
 
-const incrementCounterAction = () => {
-  return {
-    type: INCREMENT,
-  };
-};
-const decrementCounterAction = () => {
-  return {
-    type: DECREMENT,
-  };
-};
-const resetCounterAction = () => {
-  return {
-    type: RESET,
-  };
-};
-const incrementCounterByValue = (value) => {
-  return {
-    type: INCREMENT_BY_VALUE,
-    Payload: value
-  };
-};
+// const incrementCounterAction = () => {
+//   return {
+//     type: INCREMENT,
+//   };
+// };
+// const decrementCounterAction = () => {
+//   return {
+//     type: DECREMENT,
+//   };
+// };
+// const resetCounterAction = () => {
+//   return {
+//     type: RESET,
+//   };
+// };
+// const incrementCounterByValue = (value) => {
+//   return {
+//     type: INCREMENT_BY_VALUE,
+//     Payload: value
+//   };
+// };
 
 // CREATING REDUCER
 const counterReducer = (state = initialState, action) => {
