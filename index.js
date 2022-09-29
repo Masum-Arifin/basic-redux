@@ -9,7 +9,7 @@ const DECREMENT = "DECREMENT";
 const RESET = "RESET";
 
 const initialState = {
-    
+    users: ['masum'],
   count: 0,
 };
 
